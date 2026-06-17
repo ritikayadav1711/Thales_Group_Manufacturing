@@ -1,8 +1,0 @@
-st.subheader("Factory Health Overview")
-
-col1, col2, col3, col4 = st.columns(4)
-
-col1.metric("Total Machines", df["Machine_ID"].nunique())
-col2.metric("Avg Temperature", round(df["Temperature_C"].mean(), 2))
-col3.metric("Avg Vibration", round(df["Vibration_Hz"].mean(), 2))
-col4.metric("Avg Production Speed", round(df["Production_Speed_units_per_hr"].mean(), 2))
